@@ -5,7 +5,14 @@ const carSchema = new mongoose.Schema({
     name : {type : String , required : true} ,
     image : {type : String , required : true} , 
     capacity : {type : Number , required : true},
-    fuelType : {type : String , required : true} , 
+    from : {type : String , required : true} , 
+    to : {type : String , required : true} , 
+    travelDate : {type : String , required : true} , 
+    travelTime : {type : String , required : true} , 
+    bookingLastTime : {type : String , required : true} , 
+    carNumber : {type : String , required : true} , 
+    phone : {type : String , required : true} , 
+    dLicence : {type : String , required : true} , 
     bookedTimeSlots : [
         {
             from : {type : String , required : true},
